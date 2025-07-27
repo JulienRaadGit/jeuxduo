@@ -1,0 +1,13 @@
+{
+  "name": "duo-games-server",
+  "version": "1.0.0",
+  "description": "Back‑end server for a simple duo mini‑game website. Serves static files and manages real‑time games via WebSockets.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.3"
+  }
+}

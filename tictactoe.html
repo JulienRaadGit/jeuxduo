@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morpion — Jeux en Duo</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Morpion</h1>
+        <div id="user-info" class="hidden">
+          <span id="user-name"></span>
+          <span id="user-coins"></span>
+          <button id="logout-btn" class="btn">Déconnexion</button>
+        </div>
+      </header>
+      <main>
+        <div class="game-container">
+          <button id="back-btn" class="btn">← Retour</button>
+          <div id="status" class="status"></div>
+          <div id="board" class="game-board"></div>
+          <div class="chat-container">
+            <div id="chat-messages" class="chat-messages"></div>
+            <div class="chat-input">
+              <input id="chat-input" type="text" placeholder="Message..." />
+              <button id="chat-send">Envoyer</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>&copy; 2025 Jeux en Duo. Projet démonstratif.</p>
+      </footer>
+    </div>
+    <script src="js/tictactoe.js"></script>
+  </body>
+</html>

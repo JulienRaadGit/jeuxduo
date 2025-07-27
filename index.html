@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeux en Duo</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Firebase SDKs (compat version for simplicity) -->
+    <!-- Replace firebaseConfig in main.js with your own Firebase project configuration -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
+    <!-- Pas de socket.io : la communication en temps réel est gérée par Firebase Firestore -->
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Jeux en Duo</h1>
+        <div id="user-info" class="hidden">
+          <span id="user-name"></span>
+          <span id="user-coins"></span>
+          <button id="logout-btn" class="btn">Déconnexion</button>
+        </div>
+      </header>
+      <main>
+        <!-- Section shown when user is not authenticated -->
+        <div id="auth-section" class="section">
+          <h2>Bienvenue&nbsp;!</h2>
+          <p>Connecte‑toi avec Google pour sauvegarder ta progression et obtenir des pièces pour acheter des cosmétiques.</p>
+          <button id="login-btn" class="btn primary">Connexion avec Google</button>
+        </div>
+        <!-- Section shown when user is authenticated -->
+        <div id="home-section" class="section hidden">
+          <h2>Menu principal</h2>
+          <p>Choisis un jeu pour jouer avec un ami ou un inconnu en ligne.</p>
+          <div class="cards">
+            <a href="tictactoe.html" class="card">
+              <h3>Morpion</h3>
+              <p>Classique jeu de Tic‑Tac‑Toe à deux joueurs.</p>
+            </a>
+            <a href="connect4.html" class="card">
+              <h3>Puissance 4</h3>
+              <p>Aligne quatre jetons pour gagner !</p>
+            </a>
+            <a href="store.html" class="card">
+              <h3>Boutique</h3>
+              <p>Achetez des couleurs pour vos bulles de chat.</p>
+            </a>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>&copy; 2025 Jeux en Duo. Projet démonstratif.</p>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

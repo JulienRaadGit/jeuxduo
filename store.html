@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique — Jeux en Duo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Boutique</h1>
+        <div id="user-info" class="hidden">
+          <span id="user-name"></span>
+          <span id="user-coins"></span>
+          <button id="logout-btn" class="btn">Déconnexion</button>
+        </div>
+      </header>
+      <main>
+        <button id="back-btn" class="btn">← Retour</button>
+        <h2>Achète des couleurs pour tes bulles de chat</h2>
+        <div id="store-grid" class="store-grid"></div>
+      </main>
+      <footer>
+        <p>&copy; 2025 Jeux en Duo. Projet démonstratif.</p>
+      </footer>
+    </div>
+    <script src="js/store.js"></script>
+  </body>
+</html>
