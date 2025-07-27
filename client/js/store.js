@@ -3,13 +3,15 @@
 // authentication; redirects to home if not logged in.
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCCcUs3B8BlYNXbzPvdInDm2aZn2Rzk6pk",
+  authDomain: "jeuxduo-d4835.firebaseapp.com",
+  projectId: "jeuxduo-d4835",
+  storageBucket: "jeuxduo-d4835.appspot.com",   // vérifie ce champ dans la console
+  messagingSenderId: "458838128456",
+  appId: "1:458838128456:web:f1762fd1721d3f15ef257d",
+  measurementId: "G-19R5FBDFQ9"
 };
+
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
