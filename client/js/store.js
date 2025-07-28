@@ -20,7 +20,6 @@ const db = firebase.firestore();
 const auth = firebase.auth();
 
 // DOM elements
-const backBtn = document.getElementById('back-btn');
 const userInfoDiv = document.getElementById('user-info');
 const userNameSpan = document.getElementById('user-name');
 const userCoinsSpan = document.getElementById('user-coins');
@@ -156,9 +155,6 @@ async function handleStoreAction(item, state) {
 }
 
 // Back and logout handlers
-backBtn.addEventListener('click', () => {
-  window.location.href = '/';
-});
 logoutBtn.addEventListener('click', async () => {
   try {
     await auth.signOut();

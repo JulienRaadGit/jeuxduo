@@ -22,7 +22,6 @@ const db = firebase.firestore();
 const auth = firebase.auth();
 
 // DOM references
-const backBtn = document.getElementById('back-btn');
 const statusDiv = document.getElementById('status');
 const boardDiv = document.getElementById('board');
 const chatMessagesDiv = document.getElementById('chat-messages');
@@ -38,7 +37,7 @@ const uid = localStorage.getItem('duoUserId');
 const displayName = localStorage.getItem('duoDisplayName');
 const selectedColor = localStorage.getItem('duoSelectedColor') || '#0084ff';
 if (!uid) {
-  window.location.href = '/index.html';
+  window.location.href = '../index.html';
 }
 userNameSpan.textContent = displayName;
 const initialCoins2 = parseInt(localStorage.getItem('duoCoins') || '0', 10);
@@ -53,9 +52,6 @@ logoutBtn.addEventListener('click', async () => {
   } catch (err) {
     alert('Erreur lors de la déconnexion: ' + err.message);
   }
-});
-backBtn.addEventListener('click', () => {
-  window.location.href = '../index.html';
 });
 
 // Board dimensions

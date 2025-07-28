@@ -22,7 +22,6 @@ const db = firebase.firestore();
 const auth = firebase.auth();
 
 // DOM elements
-const backBtn = document.getElementById('back-btn');
 const statusDiv = document.getElementById('status');
 const boardDiv = document.getElementById('board');
 const chatMessagesDiv = document.getElementById('chat-messages');
@@ -55,9 +54,6 @@ logoutBtn.addEventListener('click', async () => {
   } catch (err) {
     alert('Erreur lors de la déconnexion: ' + err.message);
   }
-});
-backBtn.addEventListener('click', () => {
-  window.location.href = '/';
 });
 
 // Generate the board grid
