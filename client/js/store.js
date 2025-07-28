@@ -31,7 +31,7 @@ const storeGrid = document.getElementById('store-grid');
 const uid = localStorage.getItem('duoUserId');
 const displayName = localStorage.getItem('duoDisplayName');
 if (!uid) {
-  window.location.href = '/index.html';
+  window.location.href = '../index.html';
 }
 
 // Colours available in store

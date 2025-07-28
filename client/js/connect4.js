@@ -55,7 +55,7 @@ logoutBtn.addEventListener('click', async () => {
   }
 });
 backBtn.addEventListener('click', () => {
-  window.location.href = '/';
+  window.location.href = '../index.html';
 });
 
 // Board dimensions

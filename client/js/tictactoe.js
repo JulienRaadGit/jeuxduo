@@ -38,7 +38,7 @@ const uid = localStorage.getItem('duoUserId');
 const displayName = localStorage.getItem('duoDisplayName');
 const selectedColor = localStorage.getItem('duoSelectedColor') || '#0084ff';
 if (!uid) {
-  window.location.href = '/index.html';
+  window.location.href = '../index.html';
 }
 
 // Display user info
